@@ -61,7 +61,6 @@ let ``Rivers, input 2`` () =
 [<Test>]
 let ``Rivers, input 3`` () =
     rivers "hello world" |> should equal (Some (11, 1))
-
 [<Test>]
 let ``Rivers, error case 1`` () =
     rivers "" |> should equal None
