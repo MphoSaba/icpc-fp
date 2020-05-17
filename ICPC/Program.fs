@@ -16,6 +16,8 @@ let commaSprinkler (input:string) =
     | true -> 
         match (input.[input.Length-1]='.') && Char.IsLower(input,0) with
         | true ->(mined input 0)
+            //let mine = used.Split(' ') |> List.ofSeq
+            //let beforeComma = mine |> List.filter (fun c -> c.[c.Length-1]=',') |> List.map (fun c -> c.[0..(c.Length-2)) 
         | false -> None
     | false -> None
 
